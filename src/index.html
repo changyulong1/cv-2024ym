@@ -32,7 +32,11 @@
 
     .page2 {
       page-break-before: always;
-      margin-top: 30px;
+      margin-top: 18px;
+    }
+
+    h2 {
+      margin: 20px 0;
     }
   </style>
   <style>
@@ -109,6 +113,11 @@
       color: #f60;
     }
 
+    .projects strong.title {
+      font-weight: 800;
+      color: #000;
+    }
+
     .projects>ol {
       margin-top: 0;
       list-style-position: inside;
@@ -136,8 +145,11 @@
       width: 500px;
       height: 270px;
     }
+
     @media print {
-      #skills{display:none;}
+      #skills {
+        display: none;
+      }
     }
 
 
@@ -159,6 +171,8 @@
     .skills>.wrapper strong {
       color: #f60;
     }
+
+
 
     .skills>.wrapper>ul>li {
       line-height: 1.2;
@@ -222,9 +236,6 @@
       margin-left: auto;
     }
   </style>
-
-
-
   <style>
     @media (max-width: 500px) {
       body {
@@ -247,12 +258,14 @@
       #skills {
         width: auto;
       }
-      .jobs header{
+
+      .jobs header {
         flex-direction: column;
       }
-      .jobs header >h3,
-      .jobs header >h4,
-      .jobs header >span {
+
+      .jobs header>h3,
+      .jobs header>h4,
+      .jobs header>span {
         margin: 0;
       }
     }
@@ -262,99 +275,142 @@
 <body>
   <article>
     <section class="bio">
-      <h1>方应杭</h1>
-      <img src="https://pic2.zhimg.com/v2-d206f673b1e7b8a7e3b31bc8041e05e2_xll.jpg" alt="" width="100" height="100">
+      <h1>常玉龙</h1>
+      <!-- <img src="https://pic2.zhimg.com/v2-d206f673b1e7b8a7e3b31bc8041e05e2_xll.jpg" alt="" width="100" height="100"> -->
       <p>
-        男 | 30岁 | 前端开发工程师 | 杭州
+        男 | 27岁 | 前端开发工程师
       </p>
       <p>
-        手机：13812345678 | 微信：frank_fang | 邮箱：fangyinghang@foxmail.com
+        手机：15837062137 | 微信：15837062137 | 邮箱：853044263@qq.com
       </p>
     </section>
-
-
-
-
-
-
     <section class="projects">
       <h2>项目经历</h2>
       <ol>
         <li>
           <header>
-            <h3>谷UI</h3>
+            <h3>简记</h3>
             <span>
-              <a href="#">源码链接</a>
-              <a href="#">项目预览</a>
+              <a href="https://github.com/changyulong1/Bookkeeping-demo">源码私有</a>
+              <a href="https://changyulong1.github.io/Bookkeeping/#/Count">项目预览</a>
             </span>
           </header>
           <p>
-            一款基于 <strong>React</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
-
+            <strong class="title">项目介绍：</strong>简记是一款极简的记账产品，也是一款基于 Vue、TypeScript 、Vuex、Vue
+            Router实现的单页面应用。由本人独立设计及实现，源代码几乎完全用TypeScript实现，用到了装饰器等语法。
           </p>
           <p>
-            主要组件有日期选择器、弹出框、<strong>下拉更新</strong>、树形选择器等。
-
+            <strong class="title">实现功能：</strong>包含<strong>账单、记账、图表</strong>等页面，实现了<strong>记账、标签管理、数据统计等功能</strong>。
+            项目使用以 Vue CLI 为基础创建项目模版，使用 Sass 作 <strong>CSS 预处理</strong>，通过 Vue Router 实现<strong>路由的跳转</strong>，通过 vuex
+            实现<strong>状态管理</strong>等。
           </p>
-          <p>
-            已被公司前端同事广泛使用，有效提高前端团队的开发效率。
-
-          </p>
-          <p>
-            制作过程让我对 TypeScript 和单元测试有了新的认识。
-            我将其总结成了一篇博客《TS 泛型的使用》。
-          </p>
+          <p>技术栈：Vue 2 /TypeScript /Vue Router /Vuex/Sass/Element UI</p>
         </li>
         <li>
           <header>
-            <h3>写代码啦.com</h3>
+            <h3>日记博客</h3>
             <span>
-              <a href="#">源码私有</a>
-              <a href="#">项目预览</a>
+              <a href="https://github.com/changyulong1/boke-deom">源码私有</a>
+              <a href="https://changyulong1.github.io/boke/#/">项目预览</a>
             </span>
           </header>
           <p>
-            这是一个基于 <strong>Rails</strong> 和 <strong>Vue</strong> 的多页面应用。
+            <strong class="title">项目介绍：</strong>该项目是使 Vue 实现了一个多人在线共享博客系统。
           </p>
           <p>
-            主要功能包括微信登录、手机验证、直播、点播、反盗版、答题系统、课程管理系统等。
-            从数据库设计到前端展示，都是由我主导，另有两名前端辅助我。
+            <strong class="title">实现功能：</strong>包含<strong>首页、用户文章列表、个人管理</strong>等页面，实现了<strong>登录、注册、编辑、发布</strong>等功能。
+            项目使用 flex页面布局，以 Vue CLI 为基础创建项目模版，使用 Sass 作 <strong>CSS 预处理</strong>，引用 Element UI 作交互。通过 Vue Router
+            实现<strong>路由的跳转、异步加载、权限验证</strong>等，通过
+            vuex 实现<strong>状态管理</strong>，用 <strong>Axios 获取数据</strong>，并对<strong>接口进行了封装</strong>。
           </p>
-          <p>
-            该系统<strong>大幅提高教学效率</strong>，优化教学流程，受到公司和用户的好评。
-          </p>
+          <p>技术栈：Vue 2 /TypeScript /Vue Router/Axios /Vuex/Sass/Element UI</p>
         </li>
         <li>
           <header>
-            <h3>旺财记账</h3>
+            <h3>go-ui库</h3>
             <span>
-              <a href="#">源码私有</a>
-              <a href="#">项目预览</a>
+              <a href="https://github.com/changyulong1/goui-deom/tree/master/guIU">源码私有</a>
+              <a href="https://changyulong1.github.io/goui/#/">项目预览</a>
             </span>
           </header>
           <p>
-            一个基于 <strong>React</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+            <strong class="title">项目介绍：</strong>该项目是参照 Framework7、Ant Design、Element UI、iView 等 UI 库思路，做的一套基于 Vue3的简易
+            <strong>UI
+              组件库</strong>，目前已支持Button, Switch, Dialog, Tab, Carousel 等UI组件。使用 <strong>Vite、Vue3、Vue
+              Router、TypeScript</strong>
+            搭建官网。完成该项目使我对 Vue 的常用特征更加熟悉，
           </p>
-
+          <p>技术栈：Vue3/TypeScript/Vue Router/Sass/</p>
+        </li>
+        <li>
+          <header>
+            <h3>会动的代码</h3>
+            <span>
+              <a href="https://github.com/changyulong1/CanMove-deom">源码私有</a>
+              <a href="https://changyulong1.github.io/CanMove/">项目预览</a>
+            </span>
+          </header>
           <p>
-            这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
-            而且可以通过图表查看自己的消费习惯。
+            <strong class="title">项目介绍：</strong>是一个使用<strong>纯原生 JS</strong> 开发的，动态显示 CSS
+            画一个皮卡丘过程的小作品。该作品主要思路是通过<strong>间隔计时器遍历预先设置在 code
+              标签内代码</strong>，将其一个个显示在页面上，并在 style 标签上作同样处理，以使代码 CSS 生效。此外，实现了 CSS 高亮效果及调速功能。。
+          </p>
+          <p>技术栈：html /css /javaScript/highlight.js</p>
+        </li>
+        <li>
+          <header>
+            <h3>前航网站</h3>
+            <span>
+              <a href="https://github.com/changyulong1/daohang">源码私有</a>
+              <a href="https://changyulong1.github.io/daohang/dist/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>
+            <strong class="title">项目介绍：</strong>是一个使用<strong>纯原生 JS</strong>
+            开发的，使用html、css页面布局的简单的导航页面。使用<strong>使用form标签</strong>发起请求，使用<strong>纯原生JS</strong>实现网站的收藏和删除功能
+          </p>
+          <p>技术栈：html /css /javaScript</p>
+        </li>
+        <li>
+          <header>
+            <h3>画板</h3>
+            <span>
+              <a href="https://github.com/changyulong1/DrawingBoard">源码私有</a>
+              <a href="https://changyulong1.github.io/DrawingBoard/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>
+            <strong class="title">项目介绍：</strong>是使用<strong>纯原生 JS</strong> 开发的，主要利用 HTML 5 的 <strong>Canvas API</strong>
+            ，是我在学习原生 JS 及 Canvas
+            过程中开发的小工具。 其提供在<strong> PC 及手机端</strong>在线画画、橡皮擦、画笔调色、画作删除等功能，并支持画作下载。
+          </p>
+          <p>技术栈：html /css /javaScript</p>
+        </li>
+        <li class="page2">
+          <header>
+            <h3>锤子商城</h3>
+            <span>
+              <a href="https://github.com/changyulong1/hammer-deom">源码私有</a>
+              <a href="https://changyulong1.github.io/hammer/index.html#/">项目预览</a>
+            </span>
+          </header>
+          <p>
+            <strong class="title">项目介绍：</strong>是我结合自身知识，使用webpack,vue2,vuex,vur Router等知识，仿锤子商城部分功能的小项目
           </p>
           <p>
-            该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。
+            <strong
+              class="title">实现功能：</strong>包含<strong>首页、展示、详情</strong>等页面，实现了<strong>购物车的（添加、修改、删除）、收货地址添加</strong>等功能。
+            使用webpack构建项目，使用 Sass 作 <strong>CSS 预处理</strong>，引用 Element UI 作交互，通过
+            vuex 实现<strong>状态管理</strong>，完成该项目使我对webpack的常用特征更加熟悉。
           </p>
+          <p>技术栈：webpack/Vue 2 /Vue Router /Vuex/Sass/Element UI</p>
         </li>
       </ol>
     </section>
-
-
-
-
-
     <section class="skills">
       <h2>技能</h2>
       <div class="wrapper">
-        <div id="skills"></div>
+        <!-- <div id="skills"></div> -->
         <ul>
           <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
           <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
@@ -366,75 +422,50 @@
         </ul>
       </div>
     </section>
-
-
-
     <section class="openSource">
       <h2>开源项目</h2>
       <ul>
         <li>
           <header>
             <h3>自己写的 DOM 库</h3>
-            <a href="#">源码链接</a>
+            <a href="https://github.com/changyulong1/DOMFZ/blob/master/src/dom.js">源码链接</a>
           </header>
-          <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
-        </li>
-        <li class="page2">
-          <header>
-            <h3>会动的哆啦A梦</h3>
-            <span>
-              <a href="#">源码链接</a>
-              <a href="https://fangyinghang.com/make-a-pikachu/">项目预览</a>
-            </span>
-          </header>
-          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+          <p>在学DOM时，为了能熟练掌握DOM API，我封装了一个DOM库，实现了元素选择、元素创建、元素删除、
+            元素修改、<strong>事件委托</strong>等常见功能</p>
         </li>
         <li>
           <header>
-            <h3>简易画板</h3>
-            <span>
-              <a href="#">源码链接</a>
-              <a href="#">项目预览</a>
-            </span>
+            <h3>简易版 JQ库</h3>
+            <a href="https://github.com/changyulong1/JQFZ/blob/master/src/jquery.js">源码链接</a>
           </header>
-          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+          <p>在学jquery时，为了能熟练掌握DOM API，我封装了一个DOM库，实现了元素选择、元素创建、元素删除、
+            元素修改、<strong>事件委托</strong>等常见功能</p>
         </li>
       </ul>
     </section>
-
-
-
     <section class="jobs">
       <h2>工作经历</h2>
       <ol>
         <li>
           <header>
-            <h3> 彩云工作室 </h3>
-            <h4>全栈开发工程师（Ruby+JS）</h4>
-            <span><time>2017年1月</time>~<time>2018年1月</time></span>
+            <h3>蜜雪冰城</h3>
+            <h4>店长</h4>
+            <span><time>2019年3月</time>~<time>2022年5月</time></span>
           </header>
           <ul>
-            <li>
-              独立负责 iPad 客户端的后台 <strong>Rails</strong> 开发和前端开发工作
-            </li>
-            <li>
-              负责团队基础库开发、单元测试、文档撰写，确保测试<strong>覆盖率达到 90%</strong> 以上
-            </li>
-            <li>
-              作为前端骨干，负责给前端较弱的同事进行培训，提高其前端开发工作效率
-            </li>
+            <li>负责门店进货，员工的招聘等</li>
+            <li>负责门店卫生，保证店面正常营业</li>
           </ul>
         </li>
         <li>
           <header>
-            <h3>哦外巴巴集团杭州总部</h3>
-            <h4>开发工程师</h4>
-            <span><time>2015年1月</time>~<time>2017年1月</time></span>
+            <h3>东莞市桃媳妇食品有限公司</h3>
+            <h4>客服</h4>
+            <span><time>2017年3月</time>~<time>2018年12月</time></span>
           </header>
           <ul>
-            <li>独立负责某 CRM 系统的开发与维护（后端使用Groovy，前端使用JS）</li>
-            <li>负责全部门 <strong>UI 框架的开发</strong>，包括对话框、<strong>树形组件</strong>、<strong>日期选择器</strong>等常用组件</li>
-            <li>定期组织内部分享，包括 Git 的使用、<strong>ES6 新特性</strong>、TypeScript 等话题</li>
+            <li>负责售前咨询，引导客户下单</li>
+            <li>负责仓库整理，打包发货等</li>
           </ul>
         </li>
       </ol>
@@ -443,16 +474,17 @@
     <section class="others">
       <h2>其他链接</h2>
       <ul>
-        <li><a href="https://www.zhihu.com/people/zhihusucks/posts/posts_by_votes">我的博客</a>，目前已有 21 篇技术文章</li>
-        <li><a href="https://github.com/frankfang">我的 GitHub</a>，过去三个月有 200 次提交</li>
+        <li><a href="https://juejin.cn/user/3633251122155704">我的博客</a>，目前已有 10 篇技术文章</li>
+        <li><a href="https://github.com/changyulong1">我的 GitHub</a>，过去三个月有 200 次提交</li>
       </ul>
     </section>
 
     <section class="education">
       <h2>教育经历</h2>
       <p>
-        <span><time>2008年</time>~<time>2012年</time></span>
-        关山口职业技术学校 软件学院 本科</p>
+        <span><time>2013年</time>~<time>2016年</time></span>
+        商丘学院 机械制造与自动化 专科
+      </p>
     </section>
 
   </article>
