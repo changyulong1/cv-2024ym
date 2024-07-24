@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    margin: 20px 0;
+}
+
+article {
+    width: 21cm;
+    min-height: 29.7cm;
+    background: white;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 1em;
+}
+
+body {
+    font-size: 16px;
+}
+
+p {
+    margin: .3em 0;
+}
+
+h1 {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+strong {
+    font-weight: bold;
+    /* font-weight: normal; */
+    color: #000;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+p,
+li {
+    color: #666;
+}
+
+strong {
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.bio {
+    position: relative;
+}
+
+.pingjia>.text-top,
+.cyl-jiaoyu>.text-top,
+.jineng>.text-top,
+.others>.text-top,
+.projects>.text-top,
+.bio>.text-top {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.cyl-jiaoyu>.text-top>.text-left,
+.pingjia>.text-top>.text-left,
+.jineng>.text-top>.text-left,
+.others>.text-top>.text-left,
+.projects>.text-top>.text-left,
+.bio>.text-top>.text-left {
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border-radius: 100%;
+}
+
+.cyl-jiaoyu>.text-top>.text-right,
+.pingjia>.text-top>.text-right,
+.jineng>.text-top>.text-right,
+.others>.text-top>.text-right,
+.projects>.text-top>.text-right,
+.bio>.text-top>.text-right {
+    flex: 1;
+    padding: 10px;
+    border-bottom: 2px solid #000;
+}
+
+.bio>.text-top>.text-right>h2 {
+    font-size: 24px;
+}
+
+/* 个人信息css */
+.bio>.cyl-xinxi {
+    display: flex;
+    padding-left: 40px;
+    padding: 10px 40px;
+
+}
+
+.bio>.cyl-xinxi>div>p {
+    line-height: 24px;
+
+}
+
+.bio>.cyl-xinxi>.cyl-xinxi-left {
+    margin-right: 40px;
+}
+
+.bio>.cyl-xinxi>.cyl-xinxi-right {
+    margin-left: 40px;
+}
+
+/* 工作经历css */
+.cyl-jyjl {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+}
+
+.cyl-jyjl>.cyl-jyjl-jingli {
+    /* border: 1px solid #000; */
+}
+
+.cyl-jyjl>.cyl-jyjl-jingli>p {
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cyl-jyjl>.cyl-jyjl-jingli>p>span {
+    flex-grow: 1;
+    text-align: left;
+}
+
+
+.cyl-jyjl>.cyl-jyjl-zhize>p {
+    line-height: 24px;
+    margin-left: 50px;
+}
+
+/* 项目经历css */
+.projects>.cyl-xiangmu {
+    padding: 0 40PX;
+}
+
+.projects>.cyl-xiangmu>li {
+    /* margin: 20px 0; */
+}
+
+.projects>.cyl-xiangmu>li>ol>li>p {
+    /* line-height: 22px; */
+    text-align: justify
+}
+
+.projects>.cyl-xiangmu>li>header>h3 {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 技能 */
+.cyl-jineng {
+    padding: 10PX 40px;
+}
+
+.cyl-jineng>ul>li {
+    line-height: 24px;
+}
+
+/* 教育背景 */
+.cyl-jiaoyu>.cyl-jiaoyubeijing>p {
+    line-height: 24px;
+    padding: 10px 40px;
+}
+
+/* 自我评价 */
+.pingjia>div {
+    padding: 10px 40px;
+}
+
+.pingjia>div>p {
+    line-height: 24px;
+
+}
+
+.alick {
+    text-align: right;
+}
+
+.alick>a {
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+
+
+span>strong {
+    margin-right: 10px;
+}
+
+.cyl-print {
+    color: #666;
+}
+
+.title {
+    color: rgb(241, 104, 104);
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 0;
+    }
+
+    article {
+        width: auto;
+        height: auto;
+    }
+
+    .cyl-xinxi {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bio>.cyl-xinxi>.cyl-xinxi-right {
+        margin-left: 0;
+    }
+
+    .cyl-jyjl {
+        /* padding: 0; */
+    }
+
+    .cyl-jyjl-jingli>p {
+        flex-direction: column;
+        margin: 10px 0;
+        /* background: red; */
+    }
+
+    .cyl-jyjl-jingli>p>span {
+        font-size: 16px;
+    }
+
+    .cyl-jyjl-jingli>p>span>strong {
+        margin-right: 10px;
+    }
+
+    .cyl-jyjl>.cyl-jyjl-zhize>p {
+        margin-left: 0;
+    }
+
+    .projects>.cyl-xiangmu>li>header>h3 {
+        font-size: 16px;
+    }
+
+    .cyl-xiangmu>li>p {
+        word-break: normal;
+    }
+
+    .cyl-xiangmu>li>p>span {
+        word-break: break-all;
+    }
+
+    .cyl-jiaoyubeijing>p {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,10 @@
+/*实现精准分页 */
+@media print {
+    .cyl-print {
+        page-break-after: always;
+    }
+
+    .alick {
+        /* display: none; */
+    }
+}

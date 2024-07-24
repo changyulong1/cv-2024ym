@@ -1,0 +1,51 @@
+{
+  "id": "4480406",
+  "name": "简历图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1029207",
+      "name": "工作经历_line",
+      "font_class": "resume-1-copy",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "5082663",
+      "name": "项目经历",
+      "font_class": "xiangmujingli",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "5712914",
+      "name": "评价",
+      "font_class": "pingjia",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "1576148",
+      "name": "技能",
+      "font_class": "jineng",
+      "unicode": "e71f",
+      "unicode_decimal": 59167
+    },
+    {
+      "icon_id": "10146194",
+      "name": "教育背景",
+      "font_class": "jiaoyubeijing",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "5388070",
+      "name": "个人信息_o",
+      "font_class": "gerenxinxi_o",
+      "unicode": "ebcc",
+      "unicode_decimal": 60364
+    }
+  ]
+}

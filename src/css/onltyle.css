@@ -1,0 +1,219 @@
+.projects {}
+
+.projects p {
+    color: #666;
+    font-style: "宋体";
+}
+
+.projects strong {
+    color: rgb(246, 162, 162);
+    font-weight: 600;
+}
+
+.projects strong.title {
+    font-weight: 700;
+    color: #666;
+}
+
+.projects>ol {
+    margin-top: 0;
+    list-style-position: inside;
+    padding: 0;
+}
+
+.projects>ol>li {
+    /* margin-bottom: 24px; */
+}
+
+.projects>ol>li>header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects>ol>li h3 {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.projects>ol>li>p {
+    margin: 10px 0;
+}
+
+.skills {}
+
+#skills {
+
+    width: 500px;
+    height: 270px;
+}
+
+@media print {
+    #skills {
+        display: none;
+    }
+}
+
+
+.skills>.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills>.wrapper>:first-child {
+    margin-right: 24px;
+}
+
+.skills>.wrapper>#skills {}
+
+.skills>.wrapper>ul {
+    color: #666;
+}
+
+.skills>.wrapper strong {
+    color: rgb(17, 13, 13);
+    font-weight: 500;
+}
+
+
+
+.skills>.wrapper>ul>li {
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.openSource {}
+
+.openSource>h2 {
+    margin: 20px 0;
+
+}
+
+.openSource header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.openSource>ul {}
+
+.openSource>ul>li {
+    margin-bottom: 24px;
+}
+
+.openSource header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.openSource h3 {}
+
+.jobs {}
+
+.jobs>h2 {}
+
+.jobs>ol {}
+
+.jobs>ol>li {
+    margin: 12px 0;
+}
+
+.jobs header {
+    display: flex;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.jobs header>h3 {
+    font-size: 18px;
+
+}
+
+.jobs header>h4 {
+    margin-left: 1em;
+    font-size: 18px;
+}
+
+.jobs header>span {
+    font-size: 18px;
+    margin-left: auto;
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 0;
+    }
+
+    article {
+        width: auto;
+        height: auto;
+    }
+
+    .bio img {
+        display: none;
+    }
+
+    .skills .wrapper {
+        flex-direction: column;
+    }
+
+    #skills {
+        width: auto;
+    }
+
+    .jobs header {
+        flex-direction: column;
+    }
+
+    .jobs header>h3,
+    .jobs header>h4,
+    .jobs header>span {
+        margin: 0;
+    }
+}
+
+.link {
+    text-align: right;
+}
+
+.miaoshu>P {
+    margin: 10px 20px;
+}
+
+.jili>li {
+    margin: 10px 20px;
+}
+
+.mokuai>li {
+    margin: 10px 0;
+}
+
+@media print {
+
+    /*强制分页*/
+    .print-page1 {
+        padding-top: 6px;
+    }
+
+    ul>li {}
+
+    .projects>ol>li>header {
+        margin: 0;
+    }
+
+    .projects>ol>li>p {
+        margin: 0;
+    }
+
+    .bio {
+        padding-top: 24px;
+    }
+
+    .print-jili {
+        padding-top: 20px;
+    }
+
+    .print-page {
+        /* page-break-after: auto; */
+    }
+}
